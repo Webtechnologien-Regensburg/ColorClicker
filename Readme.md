@@ -22,3 +22,7 @@ In dieser Datei befindet sich eine Klasse `Color` mit der innerhalb des Spiels F
 ### Targets.js
 
 Die hier implementierte Klasse `TargetContainer` repräsentiert den Bereich des _User Interface_, in dem die zufällig eingefärbten Quadrate angezeigt werden. Beim Erstellen des Objekts wird dem Konstruktor das bereits als JavaScript-Objekt selektiert HTML-Element übergeben, in dem die Quadrate später erscheinen sollen. Dabei handelt es sich um das `div`-Element mit der Klasse `elements`. Über die `update`-Methode lassen sich die vorhandenen Quadrate im Element durch eine als Parameter angegebene Anzahl neuer Zufallsquarate ersetzen. Dabei wird in einem weitern Parameter die gewünschte Abweichung des zufällig ausgewählten Zielquadrats angegeben. Über die Methode `setOnTargetClickedListener` kann eine Callback-Methode fesggelegt werden, die jedes Mal aufgerufen wird, wenn eines der Quadrate angeklickt wurde. Der Methode wird dabei ein Parameter vom Typ `boolean` übergeben, über den bestimmt werden kann, ob das korrekte Ziel für diese Runde angeklickt wurde.
+
+### App.js
+
+Hier wird die Spiellogik auf Basis der vorher beschrieben Komponenten zusammengeführt. In Variablen werden Informationen über den aktuellen Spielstand gespeichert. Über Methoden werden bestimmte Ereignisse im Spiel, z.B. das korrekte oder falsche Auswählen eines Ziels, behandelt. 
